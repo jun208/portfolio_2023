@@ -118,7 +118,7 @@ a{text-decoration: none; color: #000;  color: #fff;}
     div.title_bar{width: 100%; height: 100%; display: flex;align-items: center; justify-content: space-between;}
   div.wrap_inner{width: 100%; height: 100%; border: 1px solid blue; }
   
-    div.work_title{width: 100%; height: 92vh; background: #eee; padding: 200px; box-sizing: border-box; 
+    div.work_title{width: 100%; height: 92vh; background: #eee; padding:200px; box-sizing: border-box; 
       display: flex; flex-direction: column; justify-content: center; background: rgb(0, 6, 88);}
     div.work_video{width: 100%; height: 100%  }
   
@@ -196,7 +196,7 @@ header{width: 100%; height: 120px; padding: 0 80px; box-sizing: border-box; posi
   div.title_bar{width: 100%; height: 100%; display: flex;align-items: center; justify-content: space-between;}
 div.wrap_inner{width: 100%; height: 100%; position: relative;  }
 
-  div.work_title{width: 100%; height: 92vh; background: rgb(0, 6, 88);/*linear-gradient(74deg, rgba(0,6,88,1) 0%, rgba(9,9,121,1) 27%, rgba(0,0,0,1) 100%);*/ padding: 200px; box-sizing: border-box; 
+  div.work_title{width: 100%; height: 70vh; background: rgb(0, 6, 88);/*linear-gradient(74deg, rgba(0,6,88,1) 0%, rgba(9,9,121,1) 27%, rgba(0,0,0,1) 100%);*/ padding: 80px; box-sizing: border-box; 
     display: flex; flex-direction: column; justify-content: center;}  
   div.work_video{width: 100%; height: 100%  }
 
@@ -216,7 +216,11 @@ img{cursor: pointer;}
 /* main */
 div.work_title{ color: #fff;}
 
-.workinfo_box h3{font-size: 64px; font-weight: bold; margin-bottom: 112px; }
+.workinfo_box{position: relative; width: 100%; height: 100%; border: 1px solid red;}
+.workinfo_box h3{ font-size: 64px; font-weight: bold; }
+/* margin-bottom: 112px;  */
+.workinfo_box h3>span{font-size: 24px;}
+
 .workinfo_box h4{font-size: 24px; margin-bottom: 16px; font-weight: 600; font-family: 'Noto Sans KR', sans-serif;}
 .workinfo_box p, .workinfo_box li {font-size: 20px;margin-bottom: 16px; }
 .workinfo_box ul{display: flex; }
@@ -247,7 +251,7 @@ div.work_summary ul>li:last-of-type>ul>li{font-size: 16px;}
 /* slide move */
 
 div.slide_fix{position: fixed;}
-div.slide_move{position: absolute; top: 92vh; background: #050505;}
+div.slide_move{position: absolute; top: 70vh; background: #050505;}
 
 
 
