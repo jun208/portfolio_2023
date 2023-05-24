@@ -227,10 +227,10 @@ div.education{}
 
 section.work{ box-sizing: border-box; background: #050505; color: #f0f0f0;}
 div.work_inner{ padding: 72px 0px; width: 100%; height:100%;  box-sizing: }
-div.work_inner h2{font-family: 'Jost'; font-size: 80px; font-weight: bold;  padding-top: 140px; box-sizing: border-box; text-align: center;}
-div.work_inner>div.work_img_box{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 400px; height: 400px; margin-top: 1%; 
+div.work_inner h2{font-family: 'Jost'; font-size: 80px; font-weight: bold;  padding-top: 140px;  box-sizing: border-box; text-align: center;}
+div.work_inner>div.work_img_box{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 400px; height: 400px; margin-top: 48px; 
 background: url(); background-size:cover; box-sizing: border-box;}
-div.work_inner>div.work_img_box> div.info_txt{text-align: center; font-family: 'Noto Sans KR', sans-serif; font-size: 16px; line-height: 1.5; padding-top: 40px;}
+div.work_inner>div.work_img_box> div.info_txt{text-align: center; font-family: 'Noto Sans KR', sans-serif; font-size: 16px; line-height: 1.5;}
 /* div.work_wrap>div.rolling{position: absolute;  bottom: 80px;   display: flex; align-items: center; justify-content: center; border: 1px solid salmon;}
 div.work_inner article{margin:0 8px;} 
 
