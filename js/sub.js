@@ -3,9 +3,8 @@
 const slideMove = document.querySelector("div.slide_move")
 const video = document.querySelector("video");
 const header = document.querySelector("header");
-
 const main = document.querySelector("div.slide_fix");
-console.log(main)
+
 
 let mainHeight = main.clientHeight;
 console.log(mainHeight)
@@ -23,9 +22,11 @@ window.addEventListener('scroll',()=>{
 
   if(scroll==0){
     video.classList.remove("on")
+
   }else{
     video.classList.add("on")
   }
+  
   if(scroll>=700){
     header.classList.add("on");
   }else{

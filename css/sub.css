@@ -1,30 +1,7 @@
 /* sub.css */
-@import url(reset.css);
-
-/* 한글폰트 */
-
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* font-family: 'Gothic A1', sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-/* font-family: 'Noto Sans KR', sans-serif; */
+@import url(common.css);
 
 
-/* 영문폰트 */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-/* font-family: 'Quicksand', sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-/* font-family: 'Josefin Sans', sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
-/* font-family: 'Inder', sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* font-family: 'Lexend', sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* font-family: 'Jost', sans-serif; */
 
 /* common.css */
 div.wrap{width: 100%; height: 100%;font-family: 'Jost', sans-serif;}
@@ -32,177 +9,15 @@ a{text-decoration: none; color: #000;  color: #fff;}
 
 
 
-
-/* Mobile 크기 0~768 */
-@media screen and (max-width:768px) {
-      /* layout */
-      div.wrap{width: 100%; height: 100%; box-sizing: border-box; background: #050505; color: #fff; box-sizing: border-box;}
-      header{width: 100%; height: 120px; padding: 0 80px; box-sizing: border-box; position: fixed;}
-        div.title_bar{width: 100%; height: 100%; display: flex;align-items: center; justify-content: space-between;}
-      div.wrap_inner{width: 100%; height: 100%; }
-      
-        div.work_title{width: 100%; height: 80vh; background: rgb(0, 6, 88); padding: 104px; box-sizing: border-box; 
-          display: flex; flex-direction: column; justify-content: center;}
-        div.work_video{width:100%; height: 100%; }
-        div.work_summary{width: 100vw; height: 100vh;  padding: 0 80px; box-sizing: border-box;
-          display: flex; flex-direction: column; justify-content: center;  }
-      footer{width: 100%; height: 80px; padding: 0 80px; box-sizing: border-box; }
-      
-      
-      /* header */
-      header{font-size: 32px; z-index: 100;}
-      header.on{background: #000;}
-      img{cursor: pointer;}
-      .title_bar>ul{display: flex;}
-      .title_bar>ul>li{margin-left:36px;}
-      
-      /* main */
-      div.work_title
-      
-      .workinfo_box h3{font-size: 48px; font-weight: bold; margin-bottom: 80px; padding-top: 40px; }
-      .workinfo_box h3>span{font-size: 24px;}
-      .workinfo_box h4{font-size: 20px; margin-bottom: 16px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;}
-      .workinfo_box p, .workinfo_box li {font-size: 20px;margin-bottom: 16px; }
-      .workinfo_box ul{display: flex; }
-      .workinfo_box ul>li{margin-right: 16px;}
-      .infobox_bottom{display: flex; margin-top: 40px;}
-      .infobox_bottom div.lang{margin-left: 80px;}
-      
-      div.work_video{display: flex; flex-direction: column; align-items: center;  padding: 80px 0 0; box-sizing: border-box; border: 1px solid red;}
-      div.work_video video {width: 100%; position: relative; top:-160px;  object-fit: cover; transition: all 0.5s ease 0s;}
-      div.work_video video.on {width: 100%; top:0; object-fit: cover;}
-   
-      div.work_link ul{display: flex;}
-      div.work_link ul>li{font-size: 20px; margin: 80px 40px;}
-      
-      div.work_link ul>li>a:hover{text-decoration: line-through; }
-      
-      div.work_summary{font-family: 'Noto Sans KR', sans-serif; }
-      div.work_summary h4{margin: 80px 0; font-weight: 900; font-size: 20px;}
-      div.work_summary p, div.work_summary ul>li{margin-bottom: 16px; font-size: 16px; margin-left: 8px; line-height: 2;}
-      div.work_summary ul>li:last-of-type>ul{margin-top: 16px; margin-left: 16px; }
-      
-      div.work_summary ul>li:last-of-type>ul>li{font-size: 16px;}
-      /* footer */
-      
-      footer{font-size: 20px; margin-top: 120px; box-sizing: border-box;}
-      footer>address{width: 100%; display: flex; justify-content: space-between; border-top: 1px solid rgba(255, 255, 255, 0.3); padding: 16px 8px 0;}
-    
-      /* slide move */
-    
-      div.slide_fix{position: fixed;}
-      div.slide_move{position: absolute; top: 80vh; background: #000;}
-
-      /* cjone */
-      div.work_title.cjone{background-color:#f42b7b;}
-
-      div.video_box{width: 100%; height: 100%; display: flex; justify-content: center; }
-      div.video_box2{width: 100%; display: flex; flex-direction: column; justify-self: center; align-items: center;}
-
-      div.work_video video.cjone{width: 100%; border:1px solid #eee; object-fit: cover;} 
-      div.work_video video.cjoneT{ display: inline-block;  width: 40%; border: 1px solid #fff;}
-      div.work_video video.cjoneM{  width: 30%; border: 1px solid #eee; margin-right: 16px;}
-
-
-      /* talk */
-      div.work_title.talk{background-color:#d30000;}
-      div.work_video video.talk{ width: 75%; border: 1px solid #fff;}
-  
-}
-
-/* Tablet 크기 769~1024 */
-@media screen and (min-width:769px) and (max-width:1024px) {
- 
-    /* layout */
-  div.wrap{width: 100%; height: 100%; box-sizing: border-box; background: #050505; color: #fff; }
-  header{width: 100%; height: 120px; padding: 0 80px; box-sizing: border-box; position: fixed;}
-    div.title_bar{width: 100%; height: 100%; display: flex;align-items: center; justify-content: space-between;}
-  div.wrap_inner{width: 100%; height: 100%; border: 1px solid blue; }
-  
-    div.work_title{width: 100%; height: 80vh; background: #eee; padding:200px; box-sizing: border-box; 
-      display: flex; flex-direction: column; justify-content: center; background: rgb(0, 6, 88);}
-    div.work_video{width: 100%; height: 100%  }
-  
-    div.work_summary{width: 100vw; height: 100vh;  padding: 160px; box-sizing: border-box;
-      display: flex; flex-direction: column; justify-content: center;  }
-  footer{width: 100%; height: 80px; padding: 0 80px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; }
-  
-  
-  /* header */
-  header{font-size: 32px; z-index:10; }
-  header.on{background: #000;}
-  img{cursor: pointer;}
-  .title_bar>ul{display: flex;}
-  .title_bar>ul>li{margin-left:36px;}
-  
-  /* main */
-  div.work_title
-  
-  .workinfo_box h3{font-size: 56px; font-weight: bold; margin-bottom: 48px; }
-  .workinfo_box h3>span{font-size: 32px;}
-  .workinfo_box h4{font-size: 24px; margin-bottom: 16px; font-weight: 600; font-family: 'Noto Sans KR', sans-serif;}
-  .workinfo_box p, .workinfo_box li {font-size: 24px;margin-bottom: 16px; }
-  .workinfo_box ul{display: flex; }
-  .workinfo_box ul>li{margin-right: 16px;}
-  .infobox_bottom{display: flex; margin-top: 40px;}
-  .infobox_bottom div.lang{margin-left: 80px;}
-  
-  div.work_video{display: flex; flex-direction: column; align-items: center;  border: 1px solid red; box-sizing: border-box;}
-  div.work_video video {position: relative; top: -80px; width: 70%; object-fit: fill; transition: all 0.5s ease 0s;}
-  div.work_video video.on {width: 80%; margin: 160px 0 0;}
-  div.work_link ul{display: flex;}
-  div.work_link ul>li{font-size: 24px; margin: 0 40px;}
-  
-  div.work_link ul>li>a:hover{text-decoration: line-through; }
-  
-  div.work_summary{font-family: 'Noto Sans KR', sans-serif; }
-  div.work_summary h4{margin: 80px 0; font-weight: 900; font-size: 24px; font-family: 'Noto Sans KR', sans-serif;}
-  div.work_summary p, div.work_summary ul>li{margin-bottom: 16px; font-size: 20px; margin-left: 8px;}
-  div.work_summary ul>li:last-of-type>ul{margin-top: 16px; margin-left: 16px; }
-  
-  div.work_summary ul>li:last-of-type>ul>li{font-size: 16px;}
-  /* footer */
-  
-  footer{font-size: 28px; margin-top: 40px;}
-  footer>address{width: 100%; display: flex; justify-content: space-between; border-top: 1px solid rgba(255, 255, 255, 0.3); padding: 16px 8px 0;}
-
-  /* slide move */
-
-  div.slide_fix{position: fixed;}
-  div.slide_move{position: absolute; top: 80vh; background: #000;}
-
-  /* cjone */
-  div.work_title.cjone{background-color:#f42b7b;}
-
-  div.video_box{width: 100%; height: 100%; display: flex; justify-content: center; }
-  div.video_box2{ width: 80%; margin: 80px 0 24px; display: block; display: flex; justify-content:space-between; align-items: center;}
-
-
-  div.work_video video.cjone{ border: 1px solid #fff; }
-  div.work_video video.cjoneT{   width: 50%;border:1px solid #fff;}
-  div.work_video video.cjoneM{ width: 30%; border: 1px solid #eee;}
-
-
-  /* talk */
-  div.work_title.talk{background-color:#d30000;}
-  div.work_video video.talk{ width: 60%; margin: 160px 0  0; border: 1px solid #fff;}
-}
-
-
-
- /* PC 크기 1024~최대 */
- @media screen and (min-width:1024px) {
-
-  body{cursor:url;}
   /* layout */
-div.wrap{width: 100%; height: 100%; box-sizing: border-box; background: #050505 /*linear-gradient(rgb(0, 6, 88), #000)*/;}
+div.wrap{position: relative; width: 100%; height: 100%; box-sizing: border-box; background: #050505 /*linear-gradient(rgb(0, 6, 88), #000)*/;   }
 header{width: 100%; height: 120px; padding: 0 160px; box-sizing: border-box; position: fixed;   z-index: 100;}
   div.title_bar{width: 100%; height: 100%; display: flex;align-items: center; justify-content: space-between;}
 div.wrap_inner{width: 100%; height: 100%; position: relative;  }
 
-  div.work_title{width: 100%; height: 75vh; background: rgb(0, 6, 88);/*linear-gradient(74deg, rgba(0,6,88,1) 0%, rgba(9,9,121,1) 27%, rgba(0,0,0,1) 100%);*/ padding: 160px; box-sizing: border-box; 
+  div.work_title{width: 100%; height: 70vh; background: rgb(0, 6, 88);/*linear-gradient(74deg, rgba(0,6,88,1) 0%, rgba(9,9,121,1) 27%, rgba(0,0,0,1) 100%);*/ padding: 160px; box-sizing: border-box; 
     display: flex; flex-direction: column; justify-content: center;}  
-  div.work_video{width: 100%; height: 100%  }
+  div.work_content_link{width: 100%; height: 100%  }
 
   
   div.work_summary{width: 100vw; height: 100vh;  padding: 200px; box-sizing: border-box;
@@ -216,11 +31,12 @@ img{cursor: pointer;}
 .title_bar>ul{display:flex; }
 .title_bar>ul>li{margin-left:80px;}
 .title_bar>ul>li>a{color: #fff;}
+.title_bar>ul>li:hover>a{text-decoration: line-through;}
 
 /* main */
-div.work_title{ color: #fff;}
-.workinfo_box{position: relative; width: 100%; height: 100%; }
-.workinfo_box h3{ font-size: 64px; font-weight: bold; margin-bottom: 48px; }
+div.work_title{ color: #fff; }
+.workinfo_box{position: relative; z-index: 100;  width: 100%; height: 100%; }
+.workinfo_box h3{ font-size: 64px; font-weight: bold; margin-bottom: 88px; }
 /* margin-bottom: 112px;  */
 .workinfo_box h3>span{font-size: 24px;}
 
@@ -233,29 +49,28 @@ div.work_title{ color: #fff;}
 .infobox_bottom{display: flex; margin-top: 40px;}
 .infobox_bottom div.lang{margin-left: 80px;}
 
-div.work_video{display: flex; flex-direction: column; align-items: center;  box-sizing: border-box;}
-div.work_video video {width: 70%;  border: 1px solid #eee; position: relative; top: -80px; 
+div.work_content_link{display: flex; flex-direction: column; align-items: center;  box-sizing: border-box;}
+div.work_content_link video {width: 70%;  border: 1px solid #eee; position: relative; top: -80px; 
   object-fit: cover; transition: all 0.5s ease 0s; }
-div.work_video video.on{width: 80%; border: 1px solid #eee; position: static; margin: 160px 0 80px;}
+div.work_content_link video.on{width: 80%; border: 1px solid #eee; position: static; margin: 160px 0 80px;}
 
 
-div.work_link ul{display: flex;}
+div.work_link ul{display: flex; }
 div.work_link ul>li{font-size: 24px; margin: 0 40px;}
-
+div.work_link ul>li>a{}
 div.work_link ul>li>a:hover{text-decoration: line-through; }
 
 div.work_summary{font-family: 'Noto Sans KR', sans-serif; color: #fff; }
 div.work_summary h4{margin: 80px 0; font-weight: 900; font-size: 24px;}
 div.work_summary p, div.work_summary ul>li{margin-bottom: 16px; font-size: 20px; margin-left: 8px;}
 div.work_summary ul>li:last-of-type>ul{margin-top: 16px; margin-left: 16px; }
-
 div.work_summary ul>li:last-of-type>ul>li{font-size: 16px;}
 
 
 /* slide move */
 
 div.slide_fix{position: fixed;}
-div.slide_move{position: absolute; top: 75vh; background: #050505;}
+div.slide_move{position: absolute; top: 70vh; background: #050505;}
 
 
 
@@ -265,25 +80,431 @@ footer{font-size: 32px; color: #fff; margin-top: 80px;box-sizing: border-box;  }
 footer>address{display: flex; justify-content: space-between; align-items: center; padding: 24px 80px 0; border-top: 1px solid rgba(255, 255, 255, 0.3);}
 
 
+/* nav */
+
+nav{}
+nav>aside{z-index: 101; position: absolute; top: 0; left: 100%; width: 100vw; height: 100vh;}
+nav>aside.on{left: 0;}
+nav>aside>div{position:relative; width: 100%; height: 100%; padding: 160px; box-sizing: border-box;}
+nav>aside button{border: none; background: none; font-size: 40px; position: absolute; left: 90%; top: 56px; transition:all 0.5s ease 0s; }
+nav>aside button:hover{transform: rotate(180deg);}
+nav>aside ul>li>a:hover{text-decoration: line-through;}
+
+nav div.work{background: #050505; }
+nav div.work>button{color: #fff; }
+
+nav div.work>ul{width: 100%; height: 100%;padding:0 80px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; text-align: center;}
+nav div.work>ul>li>a{color: #fff; font-family: 'Jost'; font-size: 88px; transition: all 0.5s ease-out 0s; }
+
+
+nav div.info{background: #fff;}
+nav div.info>ul{width: 100%; height: 100%;padding:0 80px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; text-align: center;}
+nav div.info>ul>li{display: inline-block; margin-bottom: 40px;}
+nav div.info>ul>li>a{ font-family: 'Jost'; font-size: 80px; transition: all 0.5s ease-out 0s; color: #000; }
+nav div.work>ul>li>a:hover{text-decoration: line-through;}
+
+
 /* cjone */
 div.work_title.cjone{background-color:#f42b7b;}
 
 div.video_box{width: 100%; height: 100%; display: flex; justify-content: center; }
 div.video_box2{width: 100%; padding-top: 160px; display: block; display: flex; justify-content:space-evenly; align-items: center; margin-bottom: 80px}
 
-div.work_video video.cjone{width: 70%; border:1px solid #eee; object-fit: cover;}
-div.work_video video.on.cjone{width: 80%;}
-div.work_video video.cjoneT{ display: inline-block;  width: 25%; border: 1px solid #fff; margin-right: 320px;}
-div.work_video video.cjoneM{  width: 15%; border: 1px solid #eee; margin-right: 16px;}
+div.work_content_link video.cjone{width: 70%; border:1px solid #eee; object-fit: cover;}
+div.work_content_link video.on.cjone{width: 80%;}
+div.work_content_link video.cjoneT{ display: inline-block;  width: 25%; border: 1px solid #fff; margin-right: 320px;}
+div.work_content_link video.cjoneM{  width: 15%; border: 1px solid #eee; margin-right: 16px;}
 
 
 /* fescaro */
-div.work_title.fescaro{background-color:#;}
+div.work_title.fescaro{background-color:#00afeb;}
 
 
 
 /* talk */
 div.work_title.talk{background-color:#d30000;}
-div.work_video video.talk{ width: 50%; margin: 160px 0 80px; border: 1px solid #fff;}
+div.work_content_link video.talk{ width: 50%; margin-bottom: 80px; border: 1px solid #fff;}
+div.work_content_link video.on.talk{width: 30%;}
+
+/* pure css */
+div.work_title.css{background: rgb(0, 117, 0);}
+
+/* blackrabbit */
+.rabbit_box{position: relative; transform: scale(10); top: -200px; width: 100%; height: 800px; transition: all 0.2s ease 0s;}
+.rabbit_box.on{transform: scale(1); top: 0;}
+.rabbit{position: relative; width: 100%; height: 100%; display: block;}
+    
+.rabbit .ears{z-index: 2; position: absolute;  left: calc(50% - 8px); top: calc(50% - 200px);
+    width:16px; height:16px; /*background: blue;*/  border-radius: ;}
+.rabbit .ears::before,
+.rabbit .ears::after{content: ""; display: block; position: absolute; left: calc(50% - 34px);
+  top: calc(50% - 60px);background: black; width: 68px; height: 140px; border-radius: 95% 95% 10% 10%; }
+.rabbit .ears::before{margin-left: 50px; transform: skew(-16deg);}
+.rabbit .ears::after{margin-left: -50px; transform: skew(16deg)}
+
+.rabbit .face{position: absolute; left: calc(50% - 120px); top: calc(50% - 135px);
+  width: 240px; height: 170px; background: black; padding-bottom: 10px;border-radius:  45% 60% 50% 45% ;}
+
+.rabbit .eyes{position: absolute; width:12px; height: 12px; /*background: red;*/
+  border-radius: 50%; left: calc( 50% - 6px); top: calc(42% - 6px); }
+.rabbit .eyes::before,
+.rabbit .eyes::after{content: ""; display:  block; position: absolute; background: white; }
+.rabbit .eyes::after{left: calc(50% - 24px); top: calc(50% - 31px) ; width:  48px; height: 62px;
+  border-radius: 50% 70% 60% 50%; margin-left: 30px;}
+.rabbit .eyes::before{left: calc(50% - 29px); top: calc(50% - 33px); width: 58px; height: 66px;
+  border-radius: 70% 50% 60% 50% ; margin-left: -35px;}
+
+.rabbit .eyes .eyeball{position: absolute; left: calc(50% - 11px);  top: calc(50% - 11px); width: 22px; height: 22px; /*background: yellow;*/
+  border-radius: 50%;}
+.rabbit .eyes .eyeball::before,
+.rabbit .eyes .eyeball::after{content:""; display: block; position: absolute; background:black;
+  width: 22px; height: 22px;  border-radius: 50%;}
+.rabbit .eyes .eyeball::before{z-index: 4; margin-left: 25px; margin-top: 2px;}
+.rabbit .eyes .eyeball::after{z-index: 4; margin-left: -30px;  height: 26px; top: -2px;}
+.rabbit .eyes::before,
+.rabbit .eyes::after{ animation:  ani 3s   0s infinite ;}
+
+     @keyframes ani{
+        0% { height: 64px; }
+        100%{height: 1px; top: 50%;}
+    } 
+
+.rabbit .body{position: absolute; width: 280px; height: 300px; background: black;
+top: calc(65%);border-radius: 40% 90% 40% 40%;}
+
+.rabbit .tail{position: absolute; width: 60px; height: 60px; background: black;
+left:calc(100% - 30px); top: calc(100% - 80px); border-radius: 50%;}
+
+
+/* facebook emoji */
+.emoji_box{text-align: center;   padding: 160px; display: none;}
+.emoji{position: relative;
+  display: inline-block; width: 120px; height: 120px;
+  border-radius: 50%; margin: 15px 15px 40px; background: #ffda6a;}
+  
+.emoji::after{content: "Emoji"; color: #fff; position: absolute; bottom: -40px; left: 50%; transform: translate3d(-50%, 0, 0);}
+
+/* 1.emoji_like */
+.emoji_like{background: #548dff;}
+.emoji_like::after{content: "Like";}
+
+.emoji_like .emoji_hand{position: absolute; left: 25px; bottom: 30px;
+    width: 20px; height: 40px; background: #fff; border-radius: 5px;
+    animation: hands-up 2s linear 0s infinite;}
+
+    @keyframes hands-up{
+    25%{transform: rotate(15deg);}
+    50%{transform: rotate(-15deg) translateY(-10px);}
+    75%,100%{transform: rotate(0deg);}
+    }
+
+.emoji_like .emoji_hand::before{position: absolute; left: 25px; bottom: 5px;
+    content: ""; width: 40px; height: 10px; background: #fff; 
+    border-radius: 2px 10px 10px 2px;
+    box-shadow: 1px -9px 0 1px #fff , 2px -19px 0 2px #fff,
+    3px -29px 0 3px #fff}
+.emoji_like .emoji_thumb{position: absolute; right: -25px; top: -25px;
+    border-bottom: 20px solid #fff;
+    border-left: 20px solid transparent; transform: rotate(5deg); transform-origin: 0 100%; 
+    animation:thumbs-up 2s linear 0s infinite ;}
+
+    @keyframes thumbs-up{
+        25%{transform: rotate(20deg);}
+        50%, 100%{transform: rotate(5deg);}
+    }
+
+.emoji_like .emoji_thumb::before{content: ''; 
+    position: absolute; left: -9.7px; top: -9px; 
+    width: 10px; height: 12px; background: #fff; border-radius: 50% 50% 0 0; 
+    box-shadow: -1px 4px 0 -1px #fff;
+    transform: rotate(-14deg); transform-origin: 100% 100%; }
+
+/* emoji_love */
+.emoji_love{background: #f55064;}
+.emoji_love::after{content: "Love";}
+
+.emoji_love .emoji_heart{position: absolute; left: 50%; top: 50%;
+    width: 80px; height: 80px; /*border: 1px solid #000;*/
+    margin-left: -40px; margin-top: -40px;
+    animation:heart-beat 1s linear infinite alternate ;}
+
+@keyframes heart-beat{
+    25%{transform: scale(1.1);}
+    75%{transform: scale(0.6);}
 }
+
+.emoji_heart::before,.emoji_heart::after{content: ''; position: absolute;
+    left: 50%; top: 50%; width: 40px; height: 64px; margin-left: -20px;
+    margin-top: -32px; background: #fff; border-radius: 20px 20px 0 0;}
+
+.emoji_heart::before{transform-origin: 0 100%;
+    transform: translateX(20px)rotate(-45deg) ;}
+
+.emoji_heart::after{transform-origin:  100% 100%; 
+    transform:  translateX(-20px)rotate(45deg) ;}
+
+/* emoji_haha */
+.emoji_haha::after{content: "Haha";}
+
+.emoji_haha .emoji_face{position: absolute; width: 100%; height: inherit; 
+    animation:haha-face 2s linear infinite normal ;}
+
+@keyframes haha-face{
+    10%{transform: translateY(25px);}
+    20%{transform: translateY(15px);}
+
+    30%{transform: translateY(25px);}
+    40%{transform: translateY(15px);}
+
+    50%{transform: translateY(25px);}
+
+    60%{transform: translateY(0);}
+    70%{transform: translateY(-10px);}
+
+    80%{transform: translateY(0);}
+    90%{transform: translateY(-10px);}
+}
+
+.emoji_haha .emoji_eyes{position: absolute; left: 50%; top: 35px;
+    margin-left: -13px; width: 26px; height: 6px; border-radius: 2px; 
+    /*background: #fff;*/ box-shadow: -25px 5px 0 0 #000, 25px -5px 0 0 #000;
+    transform: rotate(20deg)}
+.emoji_haha .emoji_eyes::after{content: ''; position: absolute; left: 0 ; top: 0 ;
+    width: 26px; height: 6px; border-radius: 2px; /* background: #fff;*/
+    box-shadow: -25px -5px 0 0 #000, 25px 5px 0 0 #000;
+    transform: rotate(-40deg);}
+
+.emoji_haha .emoji_mouth{position: absolute; left: 50%; top: 50%;
+    width: 80px; height: 40px; margin-left: -40px;
+    border-radius: 0 0 40px 40px; background: #000; overflow: hidden;
+    animation:haha-mouth 2s linear infinite normal ;}
+
+    @keyframes haha-mouth{
+        10%{transform: scale(0.6); top: 45%;}
+        20%{transform: scale(0.8);  top: 45%;}
+
+        30%{transform: scale(0.6); top: 45%;}
+        40%{transform: scale(0.8); top: 45%;}
+
+        50%{transform: scale(0.6); top: 45%;}
+
+        60%{transform: scale(1); top: 50%;}
+        70%{transform: scale(1.2); top: 50%}
+
+        80%{transform: scale(1); top: 50%}
+        90%{transform: scale(1.1); top: 50%}
+
+    }
+.emoji_haha .emoji_tongue{position: absolute; left: 50%; bottom: -10px;
+    margin-left: -35px;
+    width: 70px; height: 30px; border-radius: 50%;
+    background: #f55064; }
+
+/* emoji yay */
+.emoji_yay::after{content: "Yay";}
+
+.emoji_yay .emoji_face{position: absolute; width: 100%; height: inherit;
+    animation: yay 1s linear infinite alternate;}
+
+@keyframes yay {
+    25%{transform: rotate(-15deg);}
+    75%{transform: rotate(15deg);}
+}
+
+.emoji_yay .emoji_eyebrows{position: absolute; 
+    left: calc(50% - 3px);
+    top: 30px; width: 6px; height: 6px; border-radius: 50%; 
+    /* background: #fff;*/
+    box-shadow: -6px 0 0 0 #000,-36px 0 0 0 #000, 
+    6px 0 0 0 #000, 36px 0 0 0 #000}
+
+.emoji_yay .emoji_eyebrows::before, 
+.emoji_yay .emoji_eyebrows::after{ content: ""; 
+    position: absolute; left: calc(50% - 18px); bottom: 3px; 
+    width: 36px; height: 18px; border: 6px solid black; 
+    border-radius:60px 60px 0 0 ; border-bottom: 0; box-sizing: border-box;}
+    /* box-sizing: border-box - border,padding 값이 실제크기 포함 안됨 */
+
+.emoji_yay .emoji_eyebrows::before{margin-left: -21px;}
+.emoji_yay .emoji_eyebrows::after{margin-left: 21px;}
+
+.emoji_yay .emoji_mouth{position: absolute;
+    left: calc(50% - 3px); top: 60px; width: 6px; height: 6px; border-radius: 50%;
+    /* background: red;*/ box-shadow: -25px 0 0 0 #000, 25px 0 0 0 #000
+    ,-35px -2px 30px 10px #d5234c, 35px -2px 30px 10px #d5234c;}
+
+.emoji_yay .emoji_mouth::after{content: ''; 
+    position: absolute; left: calc(50% - 40px); top: -64px; width: 80px; height: 80px;
+    border-radius: 50%; box-sizing: border-box; border: 6px solid #000;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;}
+
+/* emoji_wow */
+.emoji_wow::after{content: 'Wow';}
+
+.emoji_wow .emoji_face{position: absolute; width: 100%; height: inherit;
+    animation: wow-face 3s linear 0s infinite ;}
+
+@keyframes wow-face{
+    15%,25%{transform: rotate(20deg) translateX(-25px); }
+    45%,65%{transform: rotate(-20deg) translateX(25px);}
+    75%,100%{transform: rotate(0deg) translateX(0);}
+}
+
+.emoji_wow .emoji_eyebrows{position: absolute; left: calc(50% - 3px);
+    width: 6px; height: 6px; border-radius: 50%; /*background: #fff;*/
+    box-shadow: -18px 0 0 0 #000, -33px 0 0 0 #000, 18px 0 0 0#000, 33px 0 0 0 #000;
+    animation:wow-brow 3s linear 0s infinite ;}
+
+@keyframes wow-brow{
+    15%,65%{top: 25px;}
+    75%,100%,0%{top: 15px;}
+}
+
+.emoji_wow .emoji_eyebrows::before,
+.emoji_wow .emoji_eyebrows::after{content: '';
+    position: absolute; left: calc(50% - 12px); top: -3px;
+    width: 24px; height: 20px; border-radius: 50%;
+    border: 6px solid #000; box-sizing: border-box;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;}
+
+.emoji_wow .emoji_eyebrows::before{margin-left: -25px;}
+.emoji_wow .emoji_eyebrows::after{margin-left: 25px;}
+
+.emoji_wow .emoji_eyes{position: absolute; left: calc(50% - 8px); top: 35px;
+    width: 16px; height: 24px; border-radius: 50%;/* background: red;*/
+    box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;}
+
+.emoji_wow .emoji_tongue{position: absolute; left: calc(50% - 15px); top: 50%;
+    width: 30px; height: 45px; border-radius: 50%; background: #000;
+    animation: wow-mouth 3s linear 0s infinite ;}
+
+@keyframes wow-mouth {
+    10%, 30%{width: 20px; height: 20px; left: calc(50% - 10px);}
+    50%, 70%{width: 30px; height: 40px; left: calc(50% - 15px);}
+    75%, 100%{height: 50px;}
+}
+
+/* emoji_sad */
+.emoji_sad::after{content: "Sad";}
+
+.emoji_sad .emoji_face{position: absolute; width: 100%; height: inherit;
+animation: sad-face 2s ease-in 0s infinite;}
+
+@keyframes sad-face{
+    25%, 35%{top: -15px;}
+    55%, 95%{top: 10px;}
+    100%, 0%{top:0;}
+}
+
+.emoji_sad .emoji_eyebrows{position: absolute; left: calc(50% - 3px); top: 35px;
+    width: 6px; height: 6px; border-radius: 50%;/* background: #fff;*/
+    box-shadow: -40px 9px 0 0 #000,-25px 0 0 0 #000,25px 0 0 0 #000, 40px 9px 0 0 #000;}
+
+.emoji_sad .emoji_eyebrows::before,
+.emoji_sad .emoji_eyebrows::after{content: '';
+    position: absolute; left: calc(50% - 15px); top: 2px; border-radius: 50%;
+    width: 30px; height: 20px; border: 6px solid #000;
+    box-sizing: border-box;
+    border-left-color:transparent;
+    border-right-color:transparent ;
+    border-bottom-color: transparent;}
+
+.emoji_sad .emoji_eyebrows::before{margin-left: -30px; transform: rotate(-30deg);}
+.emoji_sad .emoji_eyebrows::after{margin-left: 30px; transform: rotate(30deg);}
+
+.emoji_sad .emoji_eyes{position: absolute; left: calc(50% - 7px); top: 50px;
+    width: 14px; height: 16px;  border-radius: 50%; /*background: red;*/
+    box-shadow: 25px 0 0 0 #000, -25px 000 #000;}
+
+.emoji_sad .emoji_eyes::after{content: ''; position: absolute;
+    width: 12px; height: 12px; margin-left: 6px; background: #548dff;
+    border-radius: 0 100% 40% 50% / 0 50% 40% 100%;
+    animation: tear-drop 2s ease-in infinite; }
+    /* border-radius:top-left-x top-right-x bottom-right-x  bottom-left-x /
+      top-left-y top-right-y bottom-right-y  bottom-left-y*/
+
+@keyframes tear-drop{
+    0%,100%{display: block; left: 35px; top: 15px;
+        transform: rotate(45deg) scale(0);}
+
+    25%{display: block; left: 35px; 
+        transform: rotate(45deg) scale(2);}
+
+    49.9%{display: block; left: 35px; top: 65px;
+        transform: rotate(45deg) scale(0);}
+
+    50%{display: block; left: -35px; top: 15px;
+        transform: rotate(45deg) scale(0);}
+
+    75%{display: block; left:-35px; top: 15px;
+        transform: rotate(45deg) scale(2);}
+
+    99.9%{display: block; left: -35px; top: 65px;
+        transform: rotate(45deg) scale(0);}
+}
+
+
+.emoji_sad .emoji_mouth{position: absolute; left: calc(50% - 3px); top: 90px;
+    width: 6px; height: 6px; /*background: blue;*/ border-radius:  50%;
+    box-shadow: -18px 0 0 0#000, 18px 0 0 0 #000;}
+
+.emoji_sad .emoji_mouth::after{content: ''; position: absolute;
+    left: calc(50% - 30px); top: -10px; width: 60px; height: 80px; 
+    box-sizing: border-box; border: 6px solid #000; border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent; }
+
+/* emoji_angry */
+.emoji_angry::after{content: "Angry";}
+.emoji_angry{background: linear-gradient(to bottom, #d5234c -10%, 
+    #ffda6a 100%); background-size: 100%;}
+
+.emoji_angry .emoji_face{position: absolute; width: 100%; height: inherit;
+    animation: angry-face 2s ease-in 0s infinite;}
+
+@keyframes angry-face{
+    35%,60%{transform: translateX(0) translateY(10px) scale(0.9);}
+
+    40%{transform: translateX(-5px) translateY(10px) scale(0.9);}
+    45%{transform: translateX(5px) translateY(10px) scale(0.9);}
+
+    50%{transform: translateX(-5px) translateY(10px) scale(0.9);}
+    55%{transform: translateX(5px) translateY(10px) scale(0.9);}
+}
+
+.emoji_angry .emoji_eyebrows{position: absolute; left: calc(50% - 3px); top: 55px;
+    width: 6px; height: 6px; border-radius: 50%; /*background: #fff;*/
+    box-shadow: -44px 5px 0 0 #000, -7px 16px 0 0 #000, 7px 16px 0 0 #000,
+        44px 5px 0 0 #000;}
+
+.emoji_angry .emoji_eyebrows::before,
+.emoji_angry .emoji_eyebrows::after{content: ''; 
+    position: absolute; left: calc(50% - 25px); top: 0; width: 50px; height: 20px;
+    border: 6px solid #000; border-radius: 50%; box-sizing: border-box;
+    border-top-color: transparent;
+    border-left-color:transparent;
+    border-right-color: transparent;}
+
+.emoji_angry .emoji_eyebrows::before{margin-left: -25px; transform: rotate(15deg);}
+.emoji_angry .emoji_eyebrows::after{margin-left: 25px; transform: rotate(-15deg);}
+
+.emoji_angry .emoji_eyes{position: absolute; left: calc(50% - 6px); top: 70px;
+    width: 12px; height: 12px; border-radius: 50%; /*background: blue;*/
+    box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;}
+
+.emoji_angry .emoji_mouth{position: absolute; left: calc(50% - 18px); bottom: 15px;
+    width: 36px; height: 18px; background: #000; border-radius: 50%;
+    animation:angry-mouth 2s ease-in 0s infinite ;}
+
+@keyframes angry-mouth{
+    25%, 50%{height: 6px; bottom: 25px;}
+}
+  
+
+
 
